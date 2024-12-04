@@ -1,0 +1,433 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* Fondo claro y elegante */
+    color: #333; /* Color de texto principal */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    background-color: #222; /* Cambia el azul por negro */
+    border-bottom: 2px solid #444; /* Línea elegante */
+  }
+  
+  .navbar .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f9f9f9; /* Blanco elegante */
+  }
+  
+  .navbar .navbar-brand img {
+    margin-right: 8px;
+  }
+  
+  .navbar .navbar-nav .nav-link {
+    font-size: 1.1rem;
+    color: #ddd; /* Gris claro */
+    transition: color 0.3s ease;
+  }
+  
+  .navbar .navbar-nav .nav-link:hover,
+  .navbar .navbar-nav .nav-link.active {
+    color: #fff; /* Color blanco para resaltar */
+  }
+  
+  .navbar .navbar-nav .nav-item img {
+    width: 24px; /* Tamaño consistente para los iconos */
+    height: auto;
+    margin-right: 8px;
+  }
+  
+  .navbar .navbar-toggler {
+    border-color: #444;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #fff; /* Color blanco para el ícono de toggler */
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+  }
+  
+  footer a {
+    color: #888;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  /* Button styles */
+  button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  /* Modal styles */
+  .modal-dialog {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .modal-header,
+  .modal-footer {
+    background-color: #f4f4f4;
+    color: #444;
+  }
+  
+  .modal-body {
+    padding: 20px;
+    color: #333;
+  }
+  
+  .custom-navbar {
+    background-color: #1a1a1a; /* Negro personalizado */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  }
+  
+  .custom-navbar .nav-link {
+    color: #f0f0f0; /* Texto claro */
+    transition: color 0.3s ease-in-out; /* Transición suave */
+  }
+  
+  .custom-navbar .nav-link:hover {
+    color: #ffc107; /* Amarillo dorado al pasar el mouse */
+  }
+  
+  .custom-navbar .navbar-brand {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ffffff; /* Color blanco para el título */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Efecto de sombra */
+  }
+  
+  .custom-navbar img {
+    filter: brightness(0) invert(1); /* Íconos claros */
+    transition: transform 0.3s ease-in-out; /* Animación suave */
+  }
+  
+  .custom-navbar img:hover {
+    transform: scale(1.1); /* Aumenta ligeramente al pasar el mouse */
+  }
+  
+  .btn-primary {
+    background-color: #1a1a1a !important; /* Negro elegante */
+    color: #f0f0f0 !important; /* Texto claro */
+    border-color: #f0f0f0 !important; /* Borde claro */
+  }
+  
+  .btn-primary:hover {
+    background-color: #333333 !important; /* Gris oscuro */
+    color: #ffc107 !important; /* Amarillo dorado */
+    border-color: #ffc107 !important; /* Borde dorado */
+  }
+  
+  /* Estilo para btn-outline-primary */
+.btn-outline-primary {
+    background-color: transparent !important; /* Fondo transparente */
+    color: #1a1a1a !important; /* Negro elegante para el texto */
+    border: 1px solid #1a1a1a !important; /* Borde negro elegante */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #1a1a1a !important; /* Negro elegante al hover */
+    color: #f0f0f0 !important; /* Texto claro */
+    border-color: #f0f0f0 !important; /* Borde claro */
+  }
+  
+  /* Estilo para btn-outline-danger */
+  .btn-outline-danger {
+    background-color: transparent !important; /* Fondo transparente */
+    color: #c0392b !important; /* Rojo intenso */
+    border: 1px solid #c0392b !important; /* Borde rojo */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .btn-outline-danger:hover {
+    background-color: #c0392b !important; /* Fondo rojo intenso */
+    color: #ffc107 !important; /* Texto dorado */
+    border-color: #ffc107 !important; /* Borde dorado */
+  }
+  
+
+ 
+
+/* Paginador */
+.paginador {
+    margin-top: 20px !important;
+    padding: 10px 0 !important;
+    border-top: 1px solid #555 !important; /* Borde superior gris */
+}
+
+.paginador .row {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+/* Estilo para badge */
+.pyBadge {
+    background-color: #ffc107 !important; /* Amarillo dorado */
+    color: #222 !important;
+    padding: 5px 10px !important;
+    border-radius: 20px !important;
+    font-size: 12px !important;
+}
+
+ /* Estilo para el fondo de la página */
+body {
+    background-color: #313030 !important; /* Fondo gris suave */
+    color: #7a7a7a !important; /* Texto oscuro para buen contraste */
+    font-family: "Arial", sans-serif !important; /* Fuente moderna */
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  /* Estilo para los textos */
+label {
+    color: #f0f0f0; /* Blanco claro */
+    font-size: 1.1rem; /* Tamaño de fuente adecuado */
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Estilo para el input de búsqueda */
+input[type="text"] {
+    background-color: #444; /* Fondo oscuro */
+    color: #f0f0f0; /* Texto claro */
+    border: 1px solid #666; /* Borde gris oscuro */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    background-color: #333; /* Fondo aún más oscuro cuando se enfoca */
+    border-color: #ffc107; /* Borde dorado al enfocar */
+    outline: none;
+}
+
+/* Estilo para los botones */
+button.btn-primary {
+    background-color: #1a1a1a !important; /* Fondo negro elegante */
+    color: #f0f0f0 !important; /* Texto claro */
+    border-color: #f0f0f0 !important; /* Borde claro */
+    padding: 12px 20px; /* Tamaño cómodo */
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button.btn-primary:hover {
+    background-color: #333333 !important; /* Fondo gris oscuro */
+    color: #ffc107 !important; /* Texto dorado */
+    border-color: #ffc107 !important; /* Borde dorado */
+}
+
+/* Estilo para el contenedor de los botones */
+.botones {
+    margin-top: 15px;
+}
+
+.botones .btn i {
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+}
+
+/* Estilo para el contenedor de la fila */
+.row {
+    margin-bottom: 20px;
+}
+
+/* Contenedor de la barra de búsqueda */
+.container-fluid {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #313030; /* Fondo gris suave */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Estilo para el título principal */
+.tituloPagina {
+    font-size: 2rem; /* Tamaño grande para el título */
+    color: #f0f0f0; /* Color blanco claro */
+    font-weight: bold; /* Negrita para resaltar el título */
+    margin-bottom: 10px; /* Espacio debajo del título */
+    text-align: center; /* Centrar el texto */
+    text-transform: uppercase; /* Transformar el texto a mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras para mejorar la legibilidad */
+}
+
+/* Estilo para el subtítulo */
+.tituloPagina small {
+    font-size: 1.2rem; /* Un poco más pequeño que el título */
+    color: #888; /* Gris claro para el subtítulo */
+    font-weight: normal; /* Sin negrita para diferenciarlo del título */
+    margin-left: 5px; /* Espacio entre el título y el subtítulo */
+}
+
+/* Efecto de sombra en el texto */
+.tituloPagina {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra suave para darle profundidad */
+}
+
+/* Estilo para el input de búsqueda */
+input[type="text"] {
+    background-color: #444; /* Fondo oscuro */
+    color: #f0f0f0; /* Texto claro */
+    border: 1px solid #666; /* Borde gris oscuro */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    background-color: #333; /* Fondo aún más oscuro cuando se enfoca */
+    border-color: #ffc107; /* Borde dorado al enfocar */
+    outline: none;
+}
+
+/* Tabla estilizada */
+.table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+    font-size: 14px !important;
+    color: #ddd !important;
+    background-color: #2c2c2c !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.table th {
+    background-color: #444 !important;
+    color: #f9f9f9 !important;
+    font-weight: bold !important;
+    text-align: center !important;
+    padding: 12px !important;
+    border: 1px solid #555 !important;
+    border-radius: 6px 6px 0 0 !important;
+}
+
+.table td {
+    padding: 12px !important;
+    border: 1px solid #555 !important;
+    text-align: center !important;
+    background-color: #3a3a3a !important;
+    color: #ddd !important;
+    border-radius: 0 0 6px 6px !important;
+}
+
+.table tr:nth-child(even) {
+    background-color: #444 !important;
+}
+
+.table tr:hover {
+    background-color: #ffc107 !important; /* Dorado */
+    cursor: pointer !important;
+}
+
+.table td:first-child {
+    text-align: left !important;
+}
+
+.table td:last-child {
+    text-align: right !important;
+}
+
+/* Estilo general para el cuerpo de la página */
+body {
+    background-color: #313030 !important; /* Fondo gris suave */
+    color: #7a7a7a !important; /* Texto oscuro para buen contraste */
+    font-family: "Arial", sans-serif !important; /* Fuente moderna */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para los títulos */
+.tituloPagina {
+    font-size: 2rem !important; /* Tamaño grande para el título */
+    color: #f0f0f0 !important; /* Color blanco claro */
+    font-weight: bold !important; /* Negrita para resaltar el título */
+    margin-bottom: 10px!important; /* Espacio debajo del título */
+    text-align: center !important; /* Centrar el texto */
+    text-transform: uppercase !important; /* Transformar el texto a mayúsculas */
+    letter-spacing: 2px !important; /* Espaciado entre letras para mejorar la legibilidad */
+}
+
+.tituloPagina small {
+    font-size: 1.2rem !important; /* Un poco más pequeño que el título */
+    color: #888 !important; /* Gris claro para el subtítulo */
+    font-weight: normal !important; /* Sin negrita para diferenciarlo del título */
+    margin-left: 5px !important;
+}
+
+/* Cambiar color del texto y del fondo del input */
+input.form-control {
+    color: gold !important; /* Texto dorado */
+    background-color: black !important; /* Fondo negro */
+}
+
+/* Cambiar el color del borde al enfocarse */
+input.form-control:focus {
+    border-color: gold !important; /* Borde dorado al enfocarse */
+    color: gold !important; /* Texto dorado cuando está enfocado */
+}
+
+input[type="date"] {
+  background-color: #444 !important; /* Fondo oscuro */
+  color: gold !important; /* Texto claro */
+  border: 1px gold !important; /* Borde dorado */
+  border-radius: 5px !important;
+  padding: 10px !important;
+  font-size: 1rem !important;
+  width: 100% !important;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor" class="h-5 w-5" aria-hidden="true"%3E%3Cpath stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4V2a2 2 0 00-2-2h-8a2 2 0 00-2 2v2M4 4v12a2 2 0 002 2h12a2 2 0 002-2V4H4z"/%3E%3C/svg%3E') !important; /* Icono de calendario */
+  background-repeat: no-repeat !important;
+  background-position: right 10px center !important; /* Coloca el icono a la derecha */
+  background-size: 18px !important; /* Tamaño del icono */
+  padding-right: 35px !important; /* Deja espacio para el icono */
+  appearance: none !important; /* Elimina la apariencia predeterminada */
+}
+
+input[type="date"]:focus {
+  background-color: #333 !important; /* Fondo aún más oscuro cuando se enfoca */
+  border-color: #ffc107 !important; /* Borde dorado al enfocar */
+  outline: none !important;
+}
